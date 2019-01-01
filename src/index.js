@@ -10,11 +10,16 @@ const BUTCHER_PRODUCTS = [
 
 // Define these exported classes
 export class OlderCoaster extends Component {
-  render(){
+  render() {
     return(
-
+      <div>
       <p> Two grannies having the time of their life!</p>
 	    <p> Passengers:</p>
+
+
+
+      <p> `Two grannies having the time of their life!`</p>
+	    <p> `Passengers:`</p>
 	  <ul>
 	     <li>
 	        Agnes
@@ -23,7 +28,7 @@ export class OlderCoaster extends Component {
 	       Muriel
 	     </li>
 	  </ul>
-
+    </div>
     )
   }
 }
@@ -42,25 +47,27 @@ export class InFrontOfYou extends Component {
       </div>
     )
   }
+
 }
+
 
 
 export class ButcherShop extends Component {
 
- const products = [<li>{BUTCHER_PRODUCTS[0]}</li>, <li>BUTCHER_PRODUCTS[1]</li>,<li>BUTCHER_PRODUCTS[2]</li> , <li>BUTCHER_PRODUCTS[3]</li>]
+/*let products = [<li>{BUTCHER_PRODUCTS[0]}</li>, <li>BUTCHER_PRODUCTS[1]</li>,<li>BUTCHER_PRODUCTS[2]</li> , <li>BUTCHER_PRODUCTS[3]</li>]
 render() {
   return (
     <div>
 	<p>
 	`Hello! We have the following products for sale today:`
 	</p>
-      { products }
+    {products}
     </div>
   )
-}
+}*/
 
 }
-}
+
 
 
 export class App extends Component {
@@ -70,6 +77,9 @@ export class App extends Component {
          <OlderCoaster />
 	       <InFrontOfYou />
 	       <ButcherShop />
+       <OlderCoaster />
+	   <InFrontOfYou />
+	   <ButcherShop />
       </div>
     )
   }
